@@ -36,7 +36,7 @@ function Welcome() {
         Welcome to Founder Grants
       </Typography>
       <Typography paragraph variant="h5" component="p">
-        The best place to find dilution-free funding for your small projects.
+        Fund your startup without giving up equity.
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12}>
