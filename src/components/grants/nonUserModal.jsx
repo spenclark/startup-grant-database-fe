@@ -51,19 +51,19 @@ export default function ResponsiveDialog() {
           criteria */}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText color="primary" color="inherit">
+          <DialogContentText color="primary">
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
           <DialogContentText>
-            <Brightness1Icon fontSize="small" color="inherit" /> new grants.
+            <Brightness1Icon fontSize="6px" color="inherit" /> new grants.
           </DialogContentText>
           <DialogContentText>
-            <Brightness1Icon fontSize="small" color="inherit" /> Get updated of
+            <Brightness1Icon fontSize="6px" color="inherit" /> Get updated of
             new releases and features.
           </DialogContentText>
           <DialogContentText>
-            <Brightness1Icon fontSize="small" color="inherit" /> Stay in the
-            know for new grants that may match your search criteria.
+            <Brightness1Icon fontSize="6px" color="inherit" /> Stay in the know
+            for new grants that may match your search criteria.
           </DialogContentText>
         </DialogContent>
         <DialogContent>
