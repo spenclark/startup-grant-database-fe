@@ -51,6 +51,19 @@ export default function ResponsiveDialog() {
           </DialogContentText>
           <DialogContentText>- Nietzsche</DialogContentText>
         </DialogContent>
+        <DialogContent>
+          <DialogContentText>
+            Founder Grants is a living project. Please consider registering to:
+          </DialogContentText>
+          <DialogContentText>* Submit new grants.</DialogContentText>
+          <DialogContentText>
+            * Get updated of new releases and features.
+          </DialogContentText>
+          <DialogContentText>
+            * Stay in the know for new grants that may match your search
+            criteria.
+          </DialogContentText>
+        </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary" autoFocus>
             Close
