@@ -20,7 +20,10 @@ const useLogoStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(1),
     },
   },
-  beta: {},
+  beta: {
+    marginLeft: "4px",
+    color: "#3DB8B3",
+  },
 }));
 
 const FGLogo = ({ siteMap }) => {
@@ -165,7 +168,7 @@ const FGLogo = ({ siteMap }) => {
       >
         {!isAdmin ? "Founder Grants" : "Founder Grants Admin"}
       </Typography>
-      <Typography variant={classes.beta}>beta</Typography>
+      <Typography class={classes.beta}>beta</Typography>
     </div>
   );
 };
