@@ -55,16 +55,15 @@ export default function ResponsiveDialog() {
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
           <DialogContentText>
-            <Brightness1IconSubmit fontSize="small" color="inherit" /> new
-            grants.
+            <Brightness1Icon fontSize="small" color="inherit" /> new grants.
           </DialogContentText>
           <DialogContentText>
-            <Brightness1IconSubmit fontSize="small" color="inherit" /> Get
-            updated of new releases and features.
+            <Brightness1Icon fontSize="small" color="inherit" /> Get updated of
+            new releases and features.
           </DialogContentText>
           <DialogContentText>
-            <Brightness1IconSubmit fontSize="small" color="inherit" /> Stay in
-            the know for new grants that may match your search criteria.
+            <Brightness1Icon fontSize="small" color="inherit" /> Stay in the
+            know for new grants that may match your search criteria.
           </DialogContentText>
         </DialogContent>
         <DialogContent>
