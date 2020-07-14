@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
     // background: "#3CBBB1",
     color: "#FFFFF",
   },
+  stxt: {
+    color: "#000000",
+  },
 }));
 export default function ResponsiveDialog() {
   const [open, setOpen] = React.useState(true);
@@ -46,13 +49,7 @@ export default function ResponsiveDialog() {
           criteria */}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            "A real education is a liberation."
-          </DialogContentText>
-          <DialogContentText>- Nietzsche</DialogContentText>
-        </DialogContent>
-        <DialogContent>
-          <DialogContentText>
+          <DialogContentText className={classes.stxt}>
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
           <DialogContentText>* Submit new grants.</DialogContentText>
@@ -63,6 +60,12 @@ export default function ResponsiveDialog() {
             * Stay in the know for new grants that may match your search
             criteria.
           </DialogContentText>
+        </DialogContent>
+        <DialogContent>
+          <DialogContentText>
+            "A real education is a liberation."
+          </DialogContentText>
+          <DialogContentText>- Nietzsche</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary" autoFocus>
