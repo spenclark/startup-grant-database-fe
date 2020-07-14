@@ -1,4 +1,5 @@
 import React from "react";
+import { List } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -9,6 +10,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import { useAuth0 } from "../auth0/Auth0Wrapper";
 import { makeStyles } from "@material-ui/core/styles";
+import Brightness1Icon from "@material-ui/icons/Brightness1";
 
 const useStyles = makeStyles((theme) => ({
   btn: {
@@ -49,16 +51,27 @@ export default function ResponsiveDialog() {
           criteria */}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText className={classes.stxt}>
+          <DialogContentText color="primary" color="inherit">
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
-          <DialogContentText>* Submit new grants.</DialogContentText>
           <DialogContentText>
-            * Get updated of new releases and features.
+            <Brightness1IconSubmit fontSize="small" color="inherit" /> new
+            grants.
           </DialogContentText>
           <DialogContentText>
-            * Stay in the know for new grants that may match your search
-            criteria.
+            <Brightness1IconSubmit fontSize="small" color="inherit" /> Get
+            updated of new releases and features.
+          </DialogContentText>
+          <DialogContentText>
+            <Brightness1IconSubmit fontSize="small" color="inherit" /> Stay in
+            the know for new grants that may match your search criteria.
+          </DialogContentText>
+        </DialogContent>
+        <DialogContent>
+          <DialogContentText>
+            If you find any outdated grants, please consider reaching out or
+            suggesting an edit and a moderator will review it at the earliest
+            convenience.
           </DialogContentText>
         </DialogContent>
         <DialogContent>
