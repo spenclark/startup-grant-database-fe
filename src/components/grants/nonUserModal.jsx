@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   stxt: {
     color: "#1c1b1b",
   },
+  title: {
+    color: "#3DB8B3",
+  },
 }));
 export default function ResponsiveDialog() {
   const [open, setOpen] = React.useState(true);
@@ -45,11 +48,7 @@ export default function ResponsiveDialog() {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle
-          id="responsive-dialog-title"
-          color="primary"
-          className={classes.title}
-        >
+        <DialogTitle id="responsive-dialog-title" className={classes.title}>
           Stay up to date with the latest funding opportunities and offerings.
           {/* Create a free account to be notified of new grants that fit your
           criteria */}
@@ -58,12 +57,13 @@ export default function ResponsiveDialog() {
           <DialogContentText className={classes.stxt}>
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
-          <DialogContentText>Submit new grants.</DialogContentText>
+          <DialogContentText>- Submit new grants.</DialogContentText>
           <DialogContentText>
-            Get updated of new releases and features.
+            - Get updated of new releases and features.
           </DialogContentText>
           <DialogContentText>
-            Stay in the know for new grants that may match your search criteria.
+            - Stay in the know for new grants that may match your search
+            criteria.
           </DialogContentText>
         </DialogContent>
         <DialogContent>
@@ -74,10 +74,12 @@ export default function ResponsiveDialog() {
           </DialogContentText>
         </DialogContent>
         <DialogContent>
-          <DialogContentText>
+          <DialogContentText className={classes.stxt}>
             "A real education is a liberation."
           </DialogContentText>
-          <DialogContentText>- Nietzsche</DialogContentText>
+          <DialogContentText className={classes.stxt}>
+            - Nietzsche
+          </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary" autoFocus>
