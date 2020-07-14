@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFF",
   },
   stxt: {
-    color: "#000000",
+    color: "#1c1b1b",
   },
 }));
 export default function ResponsiveDialog() {
@@ -45,25 +45,25 @@ export default function ResponsiveDialog() {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title" className={classes.title}>
+        <DialogTitle
+          id="responsive-dialog-title"
+          color="primary"
+          className={classes.title}
+        >
           Stay up to date with the latest funding opportunities and offerings.
           {/* Create a free account to be notified of new grants that fit your
           criteria */}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText color="primary">
+          <DialogContentText className={classes.stxt}>
             Founder Grants is a living project. Please consider registering to:
           </DialogContentText>
+          <DialogContentText>Submit new grants.</DialogContentText>
           <DialogContentText>
-            <Brightness1Icon fontSize="6px" color="inherit" /> new grants.
+            Get updated of new releases and features.
           </DialogContentText>
           <DialogContentText>
-            <Brightness1Icon fontSize="6px" color="inherit" /> Get updated of
-            new releases and features.
-          </DialogContentText>
-          <DialogContentText>
-            <Brightness1Icon fontSize="6px" color="inherit" /> Stay in the know
-            for new grants that may match your search criteria.
+            Stay in the know for new grants that may match your search criteria.
           </DialogContentText>
         </DialogContent>
         <DialogContent>
