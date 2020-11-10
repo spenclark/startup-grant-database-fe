@@ -17,6 +17,7 @@
     "clsx": "^1.0.4",
     "dotenv": "^8.2.0",
     "fswatcher": "^0.0.8",
+    "heroku-self-ping": "^2.0.1",
     "material-table": "^1.56.1",
     "moment": "^2.24.0",
     "node-gyp": "^6.1.0",
